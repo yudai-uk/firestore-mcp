@@ -76,12 +76,13 @@ Create `.mcp.json` in your project root:
   "mcpServers": {
     "firestore": {
       "command": "node",
-      "args": ["/path/to/firestore-mcp/dist/index.js"],
-      "cwd": "/path/to/firestore-mcp"
+      "args": ["/path/to/firestore-mcp/dist/index.js"]
     }
   }
 }
 ```
+
+> **Note**: The server automatically loads `.env` from its installation directory, so `cwd` is not required.
 
 ### With environment variables inline
 
@@ -286,6 +287,12 @@ The server automatically handles these Firestore types:
 - Restart Claude Code after adding `.mcp.json`
 - Check the file path in configuration is correct
 - Verify the build completed successfully (`dist/index.js` exists)
+
+### MCP server shows "failed" status
+
+- The server loads `.env` from its installation directory automatically
+- Verify your `.env` file exists in the firestore-mcp directory (not your project directory)
+- Run `node /path/to/firestore-mcp/dist/index.js` manually to see error messages
 
 ## Development
 

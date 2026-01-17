@@ -21,12 +21,16 @@
     "ai",
     "database"
   ],
-  "author": "",
+  "author": "yudai-uk",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git+https://github.com/yudai-uk/firestore-mcp.git"
   },
+  "bugs": {
+    "url": "https://github.com/yudai-uk/firestore-mcp/issues"
+  },
+  "homepage": "https://github.com/yudai-uk/firestore-mcp#readme",
   "engines": {
     "node": ">=18.0.0"
   },

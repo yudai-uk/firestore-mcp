@@ -1,0 +1,47 @@
+{
+  "name": "firestore-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for Firebase Firestore - enables AI assistants to interact with Firestore databases",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "firestore-mcp": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc --watch"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "firestore",
+    "firebase",
+    "claude",
+    "ai",
+    "database"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "firebase-admin": "^13.0.0",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.0"
+  }
+}
